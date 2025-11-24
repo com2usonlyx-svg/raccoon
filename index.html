@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Firebase Web App</title>
+</head>
+<body>
+    <h1>안녕하세요, Firebase 웹 앱입니다!</h1>
+    <p>이곳에 여러분의 앱 콘텐츠를 추가하세요.</p>
+
+    <!-- Firebase SDK는 항상 제일 먼저 로드되어야 합니다. (호환성 버전) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+
+    <!-- TODO: 사용하려는 Firebase 제품의 SDK를 추가하세요. -->
+    <!-- 예: Realtime Database 사용 시 -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script> -->
+    <!-- 예: Authentication 사용 시 -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script> -->
+
+    <script>
+        // Firebase 프로젝트 설정을 여기에 붙여넣으세요.
+        // 이 정보는 Firebase 콘솔의 '프로젝트 설정' > '일반' > '내 앱' 섹션에서 찾을 수 있습니다.
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY", // 실제 API 키로 교체하세요!
+            authDomain: "raccoon-50992.firebaseapp.com",
+            databaseURL: "https://raccoon-50992-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "raccoon-50992",
+            storageBucket: "raccoon-50992.appspot.com",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID", // 실제 값으로 교체하세요!
+            appId: "YOUR_APP_ID" // 실제 값으로 교체하세요!
+        };
+
+        // Firebase를 초기화합니다.
+        const app = firebase.initializeApp(firebaseConfig);
+
+        // 이제 'app' 변수를 사용하여 Firebase 서비스를 가져오고 사용할 수 있습니다.
+        // 예: const database = app.database();
+        // 예: const auth = app.auth();
+
+        console.log("Firebase 앱이 초기화되었습니다!", app);
+    </script>
+</body>
+</html>
